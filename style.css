@@ -1,3 +1,8 @@
+html, body {
+    background: #ffffff;
+}
+
+
 /* Mematikan efek perubahan ukuran/posisi saat digulir */
 .pkp_structure_head, 
 .pkp_structure_head.is_scrolled,
@@ -7,12 +12,17 @@
     max-height: none !important;
     transform: none !important;
     transition: none !important;
-    box-shadow: none !important;
+    box-shadow: none !important
+}
+
+.pkp_site_name_wrapper {
+    height: 120px;
+    background: none;
 }
 
 /* Mengatur tinggi dan ukuran background gambar agar tetap pas */
 .pkp_structure_head {
-    background-image: url('https://jurnal.um-palembang.ac.id/public/journals/45/pageHeaderTitleImage_en_US.png') !important;
+    background-image: url('https://assets-ojs.vercel.app/img/banner.png') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
