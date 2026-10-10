@@ -12,20 +12,24 @@ html, body {
     max-height: none !important;
     transform: none !important;
     transition: none !important;
-    box-shadow: none !important
+    box-shadow: none !important;
+    background-color: black !important;
 }
 
 .pkp_site_name_wrapper {
-    height: 120px;
-    background: none;
-}
-
-/* Mengatur tinggi dan ukuran background gambar agar tetap pas */
-.pkp_structure_head {
     background-image: url('https://assets-ojs.vercel.app/img/banner.png') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
+    height: 170px;
+}
+
+/* Mengatur tinggi dan ukuran background gambar agar tetap pas */
+.pkp_structure_head {
+    background: linear-gradient(135deg, #000000 0%, #000000 100%) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    border-bottom: 3px solid #050505;
+    padding: 10px 0 !important;
 }
 
 /* Memastikan area dalam header tetap transparan agar background terlihat utuh */
@@ -48,5 +52,13 @@ html, body {
         background: none;
         padding-left: 2.143rem;
         padding-right: 2.143rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .pkp_navigation_search_wrapper a {
+        padding-bottom: 6px;
+        border-bottom-width: 4px;
+        color: #f9fdff;
     }
 }
