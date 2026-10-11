@@ -1,10 +1,14 @@
 html, body {
-    background-image: url('https://cdn.dribbble.com/userupload/49006507/file/still-4faee947b7c2eaf2637cae250dc5cb27.png') !important;
+    background-image: url('https://assets-ojs.vercel.app/img/background.jpg') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
+    background-attachment: fixed !important; /* Membuat background menetap/tidak ikut bergulir */
 }
 
+body::-webkit-scrollbar{
+    overflow: hidden;
+}
 
 /* Mematikan efek perubahan ukuran/posisi saat digulir */
 .pkp_structure_head, 
